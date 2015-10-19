@@ -1,0 +1,149 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auot;
+}
+.gallery {
+	width: 100%;
+}	
+ul { 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.icon svg {
+	width: 150px;
+	cursor: default;
+	transition: stroke 1s;
+	/*filter: drop-shadow(10px 10px 5px 0px );*/
+	/*filter: drop-shadow( 10px 10px 10px #000 );*/
+}
+path, polygon, circle {
+	transition: fill 2s;
+	/*filter: drop-shadow( 10px 10px 10px #000 );*/
+}
+.galleryCellRed, 
+.galleryCellRedOrange,
+.galleryCellOrange, 
+.galleryCellYellowOrange, 
+.galleryCellYellow, 
+.galleryCellYellowGreen, 
+.galleryCellGreen, 
+.galleryCellBlueGreen, 
+.galleryCellBlue, 
+.galleryCellBluePurple, 
+.galleryCellPurple,
+.galleryCellRedPurple {
+	background-color: #FFF;
+	width: calc(33.33% - 10px);
+	height: calc(100vh - 20px);
+	margin: 10px 5px;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+.galleryCellRed .icon svg {
+	fill: #F80F00;
+}
+.galleryCellRedOrange .icon svg {
+	fill: #FA7900;
+}
+.galleryCellOrange  .icon svg {
+	fill: #FDB901;
+}
+.galleryCellYellowOrange  .icon svg {
+	fill: #FEDE00;
+}
+.galleryCellYellow  .icon svg {
+	fill: #FDFF00;
+}
+.galleryCellYellowGreen  .icon svg {
+	fill: #D7FF00;
+}
+.galleryCellGreen  .icon svg {
+	fill: #34C000;
+}
+.galleryCellBlueGreen  .icon svg {
+	fill: #30C0A7;
+}
+.galleryCellBlue  .icon svg{
+	fill: #0400FF;
+}
+.galleryCellBluePurple  .icon svg {
+	fill: #6700BF;
+}
+.galleryCellPurple  .icon svg {
+	fill: #9500C0;
+}
+.galleryCellRedPurple  .icon svg {
+	fill: #BF0099;
+}
+svg {
+	stroke: #000;
+	stroke-width: 1;
+	stroke-alignment: outer;
+}
+/*CSS STYLES FOR ICONS START HERE*/
+ .icon {
+ 	width:55.55%;
+ 	margin: 0 auto;
+ 	cursor: pointer;
+ }
+ .cell {
+ 	display:flex;
+ 	flex-wrap:wrap;
+ 	align-items:center;
+ 	border: 1px solid #000;
+ 	transition: border 1s, background 2s;
+}
+p, li {
+	font-size: 10px;
+	text-shadow: 1px 1px 1px #fff;
+	transition: color 1s, text-shadow 1s;
+}
+div.colorInfo {
+	/*text-align: center;*/
+	/*width: 75%;*/
+	/*margin: 0 auto;*/
+}
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.galleryCellRed, 
+	.galleryCellRedOrange,
+	.galleryCellOrange, 
+	.galleryCellYellowOrange, 
+	.galleryCellYellow, 
+	.galleryCellYellowGreen, 
+	.galleryCellGreen, 
+	.galleryCellBlueGreen, 
+	.galleryCellBlue, 
+	.galleryCellBluePurple, 
+	.galleryCellPurple,
+	.galleryCellRedPurple {
+		width: calc(44.44% - 10px);
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.galleryCellRed, 
+	.galleryCellRedOrange,
+	.galleryCellOrange, 
+	.galleryCellYellowOrange, 
+	.galleryCellYellow, 
+	.galleryCellYellowGreen, 
+	.galleryCellGreen, 
+	.galleryCellBlueGreen, 
+	.galleryCellBlue, 
+	.galleryCellBluePurple, 
+	.galleryCellPurple,
+	.galleryCellRedPurple {
+		width: calc(55.55% - 10px);
+	}
+}
